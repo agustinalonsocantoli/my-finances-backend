@@ -5,14 +5,12 @@ const kpiController = {
         try{
             const kpis = await kpi.find();
 
-            res.status(200).json({
-                data: kpis
-            })
+            res.status(200).json(kpis);
 
         } catch(err) {
             res.status(404).json({
                 message: err.message
-            })
+            });
         }
     },
 }
