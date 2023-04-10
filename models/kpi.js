@@ -69,7 +69,7 @@ const kpiSchema = new Schema({
         currency: "USD",
         get: (v) => v / 100
     },
-    ExpensesByCategory: {
+    expensesByCategory: {
         type: Map,
         of: {
             type: mongoose.Types.Currency,
